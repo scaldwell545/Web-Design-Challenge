@@ -1,0 +1,41 @@
+.navbar {
+    padding-top:0px;
+    padding-bottom:0px;
+    color: white;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    background-color: rgb(91, 192, 222);
+    font-family: cochin;
+    font-weight: bold;
+    padding: 15px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.nav li {
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.nav a {
+    color:grey;
+}
+
+body {
+    background-color: rgb(200, 200, 200);
+}
+
+.box {
+    margin-top: 50px;
+    background-color: white;
+    padding: 60px 30px 10px;
+}
+
+.box h2 {
+    font-family: cochin;
+    font-weight: bold;
+    color: rgb(91, 192, 222);
+}
