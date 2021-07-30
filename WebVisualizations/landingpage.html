@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">Latitude</a>
+              <a class="navbar-brand" href="landingpage.html">Latitude</a>
             </div>
             <ul class="nav navbar-nav text-secondary">
               <li class="nav-item dropdown">
@@ -52,16 +52,52 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-7">
                 <div class="box">
-                    <h2 class="color-info">Summary</h2>
+                    <h2 class="color-info">Summary: Latitude vs. X</h2>
+                    <hr>
+                    <img src="Visualizations/Fig1.png" class="pic rounded float-left" alt="Max Temperature Graph">
+                    <p>The purpose of this assignment was to analyze how weather changes as you get closer to the equator. 
+                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cites. </p>
+                    <br>
+                    <p>After assembling the data, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at include:
+                    temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, 
+                    as well as explanations and descriptions of any trends and correaltions witnessed.</p>
                 </div>
             </div>    
-            <div class="col-4">
+            <div class="col-5">
                 <div class="box">
                     <h2>Visualizations</h2>
+                    <hr>
+                    <div class="container">
+                        <div class="row" style="padding-bottom: 20px; padding-top: 20px;">
+                            <div class="col-6">
+                                <a href="Assets/maxtemp.html" title="Latitude vs. Max Temperature">
+                                    <img src="Visualizations/Fig1.png" class="vizpics" alt="Max Temperature Graph" href="Assets/maxtemp.html">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="Assets/humidity.html" title="Latitude vs. Humidity">
+                                    <img src="Visualizations/Fig2.png" class="vizpics" alt="Humidity Graph">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 20px;">
+                            <div class="col-6">
+                                <a href="Assets/cloudiness.html" title="Latitude vs. Cloudiness">
+                                    <img src="Visualizations/Fig3.png" class="vizpics" alt="Cloudiness Graph">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="Assets/windspeed.html" title="Latitude vs. Wind Speed">
+                                    <img src="Visualizations/Fig4.png" class="vizpics" alt="Wind Speed Graph">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </div>
 </body>
 </html>
