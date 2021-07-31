@@ -2,10 +2,14 @@ img {
   max-width: 100%;
 }
 
+nav {
+    background-color:white;
+}
+
+
 .navbar {
     padding-top:0px;
     padding-bottom:0px;
-    color: white;
 }
 
 .navbar .navbar-brand {
@@ -22,14 +26,12 @@ img {
     background-color: rgb(41, 142, 172);
 }
 
-.nav li {
+
+.collapse li a{
     padding-right: 20px;
     padding-left: 20px;
-    
-}
-
-.nav a {
-    color:grey;
+    justify-content: space-between;
+    color: grey;
 }
 
 body {
@@ -48,6 +50,12 @@ body {
     color: rgb(91, 192, 222);
 }
 
+.box h5 {
+    font-family: cochin;
+    font-weight: bold;
+    color: rgb(91, 192, 222);
+}
+
 .pic {
     width:40%;
     height:40%;
@@ -61,4 +69,63 @@ body {
 .vizpics:hover {
     border-color: rgb(91, 192, 222);
     border-style: solid;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-collapse.collapse.in {
+  display: inline-block!important;
+}
+
+
+
+@media (max-width: 1000px) {
+    
+    nav.navbar {
+        background: rgb(91, 192, 222);
+    }
+    
+    .nav li {
+        display: none;
+    }
+    
+    a {
+        color:rgb(91, 192, 222);
+    }
+    
+    .collapse {
+        background-color:rgb(91, 192, 222);
+        text-align:center;
+    }
+    
+    .collapse li a{
+        color:white;
+    }
+    
+    .dropdown-menu {
+        background-color:rgb(91, 192, 222);
+        text-align:center;
+    }
+    
+    .main-wrapper {
+        height: 100vh;  
+    }
+    
+    
+    .container {
+        max-width: 100%;
+        background-size: 100%;
+        padding-right:0;
+        padding-left:0;
+        padding-top:0;
+        padding-bottom:0;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    
+    .box {
+        margin-top:0;
+    }
 }
