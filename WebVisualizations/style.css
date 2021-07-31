@@ -79,6 +79,36 @@ body {
   display: inline-block!important;
 }
 
+.dropdown-container {
+  position: relative;
+}
+
+td {
+    text-align:left;
+    height: 40px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+
+th {
+    text-align:left;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table {
+    padding-right:0;
+}
+
+
+
 
 
 @media (max-width: 1000px) {
