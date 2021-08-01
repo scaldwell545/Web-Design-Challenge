@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset='UTF-8'/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Humidity</title>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+    
+<body>
+    
+    <!-- navbar -->    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            
+            <div class="navbar-header">
+                <a class="navbar-brand" 
+                    href="../main.html">
+                    Latitude</a>
+            </div>
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-target="#navbarCollapse" 
+                    data-toggle="collapse"
+                    aria-controls="navbarCollapse" 
+                    aria-expanded="false" 
+                    aria-labelledby="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class= "navbar-nav ml-auto color-grey" >
+                    <div class="dropdown-container">
+                    <li class="nav-item dropdown" 
+                        role="button" 
+                        data-toggle="dropdown" 
+                        aria-haspopup="true" 
+                        aria-expanded="false"
+                        id="#dropdownMenuLink">
+                    <a class="dropdown-toggle" href="#" >Plots</a></li>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="windspeed.html">Latitude vs. Windspeed</a>
+                        <a class="dropdown-item" href="maxtemp.html">Latitude vs. Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Latitude vs. Cloudiness</a>
+                    </div>
+                    </div>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    
+    <!-- content -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-7">
+                <div class="box">
+                    <h2 class="color-info">Humidity</h2>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <img src="../Visualizations/Fig2.png" alt="Cloudiness Graph">
+                        </div>
+                        <div class="row">
+                            <p>As expected, the weather becomes significantly warmer as one approaches the equator.
+                            More interesting, however, is the fact that the southern hemisphere tends to be warmer this time of year 
+                            than the norther hemisphere. This may be due to the tilt of the earth at the 
+                            time of the year that this data was gathered</p>
+                         </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-12 col-lg-5">
+                <div class="box">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="container">
+                        <div class="row" style="padding-bottom: 20px; padding-top: 20px;">
+                            <div class="col-md-12 col-lg-6">
+                                <a href="maxtemp.html" title="Latitude vs. Max Temperature">
+                                    <img src="../Visualizations/Fig1.png" class="vizpics" alt="Max Temperature Graph" href="maxtemp.html">
+                                </a>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <a href="humidity.html" title="Latitude vs. Humidity">
+                                    <img src="../Visualizations/Fig2.png" class="vizpics" alt="Humidity Graph">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 20px;">
+                            <div class="col-md-12 col-lg-6">
+                                <a href="cloudiness.html" title="Latitude vs. Cloudiness">
+                                    <img src="../Visualizations/Fig3.png" class="vizpics" alt="Cloudiness Graph">
+                                </a>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <a href="windspeed.html" title="Latitude vs. Wind Speed">
+                                    <img src="../Visualizations/Fig4.png" class="vizpics" alt="Wind Speed Graph">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
